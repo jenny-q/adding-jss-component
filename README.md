@@ -43,6 +43,8 @@ The **name** is the property we'll use to render the item.
 
 **type** is the type of field, e.g image, text, rich text, multilist, etc.
 
+![sitecore display name field example](/banner01.PNG)
+
 
 Create the `Banner.tsx` file within `src/components/Banner.tsx`.
 The component name should match the sitecore definition name.
@@ -83,11 +85,11 @@ export default withDatasourceCheck()<ComponentProps>(Banner);
 ```
 
 From here, you can deploy and add the component within your sitecore content editor:
-insert image
+![add component within sitecore](/banner02.PNG)
 
 You can also create a yml file and deploy. When creating a yml file, make sure you are using the proper spacing or the deploy will fail.
-Add your file under `data/routes/pageName/en.yml`. Note that if your `pageName` is test, the url will `localhost/test.
-insert image
+Add your file under `data/routes/pageName/en.yml`. Note that if your `pageName` is test, the url will `localhost/test.`
+![yml file with spacing and component name](/banner03.PNG)
 
 Once you are done, deploy using:
 `jss deploy app --acceptCertificate yourPreDefinedCert -c -d`
